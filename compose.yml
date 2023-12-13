@@ -1,0 +1,6 @@
+services:
+  vm1-osint:
+    build: .
+    ports:
+      - 22:22
+      - 80:80

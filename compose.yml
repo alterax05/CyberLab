@@ -1,6 +1,6 @@
 services:
   vm1-osint:
-    build: .
+    image: itteambarsanti/pwd_box1
     ports:
       - 22:22
       - 80:80

@@ -9,4 +9,4 @@ COPY finish.sh non_guardare.txt /
 RUN chmod +x finish.sh
 COPY index.html /var/www/html/
 EXPOSE 22 80
-CMD ["/bin/bash", "-c","finish.sh & /usr/sbin/apache2ctl -D FOREGROUND & /usr/sbin/sshd -D"]
+CMD ["/bin/bash", "-c","./finish.sh & /usr/sbin/apache2ctl -D FOREGROUND & /usr/sbin/sshd -D"]
